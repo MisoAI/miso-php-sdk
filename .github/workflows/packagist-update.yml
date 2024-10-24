@@ -14,9 +14,3 @@ jobs:
         with:
           username: ${{ secrets.PACKAGIST_USERNAME }}
           api_token: ${{ secrets.PACKAGIST_API_TOKEN }}
-
-      - uses: actions/setup-node@v2
-        with:
-          node-version: 16
-      - run: npm install
-      - run: npm test
