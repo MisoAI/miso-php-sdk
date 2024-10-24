@@ -18,7 +18,7 @@ class Core {
             'headers' => [
                 'X-API-KEY' => $args['api_key'],
             ],
-            'base_uri' => 'https://api.askmiso.com/v1/',
+            'base_uri' => isset($args['base_uri']) ? $args['base_uri'] : 'https://api.askmiso.com/v1/',
         ]);
     }
 
